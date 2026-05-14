@@ -12,5 +12,11 @@ jobs:
           node-version: 24
       - name: Install Packages
         run: npm ci
+      - name: Lint
+        run: npm run lint
       - name: Run tests
         run: npm test
+      - name: Build code
+        run: npm run build
+      - name: Deploy code
+        run: echo "Deploying......."
